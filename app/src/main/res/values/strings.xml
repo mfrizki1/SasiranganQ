@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SasiranganQ</string>
+    <string name="title_activity_belajar">Materi</string>
+    <string name="title_activity_sejarah">Sejarah</string>
+    <string name="title_activity_ragam">Ragam</string>
+    <string name="title_activity_alat">Alat</string>
+    <string name="title_activity_cara">Cara Pembuatan</string>
+    <string name="title_activity_game">Bermain</string>
+    <string name="title_activity_rajabayam">Raja Bayam</string>
+    <string name="title_activity_bintangbahambur">Bintang Bahambur</string>
+    <string name="title_activity_daunjaruju">Daun Jaruju</string>
+    <string name="title_activity_kulatkarikit">Kulat Karikit</string>
+    <string name="title_activity_gelombang">Gelombang</string>
+    <string name="title_activity_gigiharuan">Gig Haruan</string>
+    <string name="title_activity_kambangtampuk">Kambang Tampuk Manggis</string>
+    <string name="title_activity_nagabalimbur">Naga Balimbur</string>
+    <string name="title_activity_kangkung">Kangkung Kaumbakan</string>
+    <string name="title_activity_sasaki">Kambang Sasaki</string>
+    <string name="title_activity_kacang">Kembang Kacang</string>
+    <string name="title_activity_ombak">Ombak Sinapur Karang</string>
+    <string name="title_activity_ramak">Ramak Sahang</string>
+    <string name="title_activity_ularlidi">Ular Lidi</string>
+    <string name="title_activity_turundayang">Turun Dayang</string>
+
+</resources>

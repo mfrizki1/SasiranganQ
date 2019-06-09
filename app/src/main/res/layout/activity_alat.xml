@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.c.sasirangan.alat"
+    android:background="#FFFFF2F4">
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/jdlalat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alat Sasirangan"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:layout_below="@+id/garis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:id="@+id/garis1"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        android:layout_below="@+id/jdlalat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtalat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia ut elit ac vehicula. Donec lobortis a ligula et porttitor. Donec consequat mi vitae lectus cond"
+        android:textColor="@color/primaryTextColor"
+        android:layout_below="@+id/jdlalat"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtalat">
+
+        <Button
+            android:id="@+id/ember"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ember" />
+
+        <TextView
+            android:id="@+id/txtember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ember"
+            android:layout_alignEnd="@+id/ember"
+            android:layout_alignStart="@+id/ember"
+            android:gravity="center"
+            android:text="Ember"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/gunting"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/gunting"
+            android:layout_below="@+id/txtember"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gunting"
+            android:layout_alignEnd="@+id/gunting"
+            android:layout_alignStart="@+id/gunting"
+            android:gravity="center"
+            android:text="Gunting"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/jarum"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/jarum_dan_benang" />
+
+        <TextView
+            android:id="@+id/txtjarum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jarum"
+            android:layout_alignEnd="@+id/jarum"
+            android:layout_alignStart="@+id/jarum"
+            android:gravity="center"
+            android:text="Jarum &amp; Benang"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/kain"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/kain"
+            android:layout_below="@+id/txtjarum"/>
+
+        <TextView
+            android:id="@+id/txtkain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kain"
+            android:layout_alignEnd="@+id/kain"
+            android:layout_alignStart="@+id/kain"
+            android:gravity="center"
+            android:text="Kain"
+            android:textSize="12dp"/>
+
+        <Button
+        android:id="@+id/pensil"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/pensil" />
+
+        <TextView
+            android:id="@+id/txtpensil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pensil"
+            android:layout_alignEnd="@+id/pensil"
+            android:layout_alignStart="@+id/pensil"
+            android:gravity="center"
+            android:text="Pensil"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/pewarna"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pewarna"
+            android:layout_below="@id/txtpensil"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pewarna"
+            android:layout_alignEnd="@+id/pewarna"
+            android:layout_alignStart="@+id/pewarna"
+            android:gravity="center"
+            android:text="Pewarna"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/sarung"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:layout_below="@+id/txtkain"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/sarung_tangan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sarung"
+            android:layout_alignEnd="@+id/sarung"
+            android:layout_alignStart="@+id/sarung"
+            android:gravity="center"
+            android:text="Sarung Tangan"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/rafia"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:layout_below="@+id/txtkain"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/rafia" />
+
+        <TextView
+            android:id="@+id/txtrafia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rafia"
+            android:layout_alignEnd="@+id/rafia"
+            android:layout_alignStart="@+id/rafia"
+            android:gravity="center"
+            android:text="Rafia"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

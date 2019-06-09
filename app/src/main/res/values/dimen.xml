@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="btn">20sp</dimen>
+    <dimen name="judul">20dp</dimen>
+    <dimen name="isi">11dp</dimen>
+</resources>

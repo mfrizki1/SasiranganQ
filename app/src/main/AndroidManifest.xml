@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.c.sasirangan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".belajar"
+            android:label="@string/title_activity_belajar" />
+        <activity
+            android:name=".sejarah"
+            android:label="@string/title_activity_sejarah" />
+        <activity
+            android:name=".ragam"
+            android:label="@string/title_activity_ragam" />
+        <activity
+            android:name=".alat"
+            android:label="@string/title_activity_alat" />
+        <activity
+            android:name=".cara"
+            android:label="@string/title_activity_cara" />
+        <activity
+            android:name=".game"
+            android:label="@string/title_activity_game" />
+        <activity
+            android:name=".RajaBayam"
+            android:label="@string/title_activity_rajabayam" />
+        <activity
+            android:name=".BintangBahambur"
+            android:label="@string/title_activity_bintangbahambur" />
+        <activity
+            android:name=".DaunJaruju"
+            android:label="@string/title_activity_daunjaruju" />
+        <activity
+            android:name=".KulatKarikit"
+            android:label="@string/title_activity_kulatkarikit" />
+        <activity
+            android:name=".Gelombang"
+            android:label="@string/title_activity_gelombang" />
+        <activity
+            android:name=".GigiHaruan"
+            android:label="@string/title_activity_gigiharuan" />
+        <activity
+            android:name=".KambangTampukManggis"
+            android:label="@string/title_activity_kambangtampuk" />
+        <activity
+            android:name=".NagaBalimbur"
+            android:label="@string/title_activity_nagabalimbur" />
+        <activity
+            android:name=".KangkungKaumbakan"
+            android:label="@string/title_activity_kangkung" />
+        <activity
+            android:name=".KambangSasaki"
+            android:label="@string/title_activity_sasaki" />
+        <activity
+            android:name=".KembangKacang"
+            android:label="@string/title_activity_kacang" />
+        <activity
+            android:name=".OmbakSinapurKarang"
+            android:label="@string/title_activity_ombak" />
+
+        <activity
+            android:name=".RamakSahang"
+            android:label="@string/title_activity_ramak" />
+        <activity
+            android:name=".UlarLidi"
+            android:label="@string/title_activity_ularlidi" />
+        <activity
+            android:name=".TurunDayang"
+            android:label="@string/title_activity_turundayang" />
+        <activity
+            android:name=".skor">
+        </activity>
+    </application>
+
+</manifest>
