@@ -1,8 +1,5 @@
 package com.example.c.sasirangan;
 
-/**
- * Created by C on 04/06/2019.
- */
 
 public class SoalPilihanGanda {
 
