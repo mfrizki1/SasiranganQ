@@ -19,6 +19,7 @@
             android:layout_height="100dp"
             android:background="@drawable/sejarah"
             android:layout_marginTop="115dp"
+            android:layout_alignParentLeft="true"
             android:layout_marginLeft="50dp"/>
 
         <TextView
@@ -41,7 +42,8 @@
             android:layout_height="100dp"
             android:background="@drawable/ragam"
             android:layout_marginTop="115dp"
-            android:layout_marginLeft="220dp" />
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -64,6 +66,7 @@
             android:layout_height="100dp"
             android:background="@drawable/alat"
             android:layout_marginTop="50dp"
+            android:layout_alignParentLeft="true"
             android:layout_marginLeft="50dp"
             android:layout_below="@+id/txtsejarah"/>
 
@@ -89,21 +92,23 @@
         android:layout_height="100dp"
         android:background="@drawable/cara"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="220dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
         android:layout_below="@+id/txtragam"    />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cara Pembuatan"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="@dimen/btn"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:id="@+id/txtcara"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="190dp"
-            android:layout_below="@+id/cara"/>
+    <TextView
+        android:id="@+id/txtcara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cara"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="23dp"
+        android:gravity="center"
+        android:text="Cara Pembuatan"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/btn"
+        android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnHome"

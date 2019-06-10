@@ -4,6 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.c.sasirangan.cara">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.c.sasirangan.cara"
+    android:background="#FFFFF2F4">
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/jdlcara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cara Pembuatan Sasirangan"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/garis"/>
+
+    <View
+        android:id="@+id/garis1"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        android:layout_below="@+id/jdlcara"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
 
 </RelativeLayout>

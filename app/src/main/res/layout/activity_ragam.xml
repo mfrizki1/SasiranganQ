@@ -66,7 +66,8 @@
             android:layout_below="@+id/sasi1"
             android:layout_alignStart="@+id/sasi1"
             android:layout_alignEnd="@+id/sasi1"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Bintang Bahambur-->
         <Button
@@ -85,7 +86,8 @@
             android:layout_below="@+id/sasi2"
             android:layout_alignStart="@+id/sasi2"
             android:layout_alignEnd="@+id/sasi2"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Daun Jaruju-->
         <Button
@@ -104,7 +106,8 @@
             android:layout_below="@+id/sasi3"
             android:layout_alignStart="@+id/sasi3"
             android:layout_alignEnd="@+id/sasi3"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Kulat Karikit-->
         <Button
@@ -124,7 +127,8 @@
             android:layout_below="@+id/sasi10"
             android:layout_alignStart="@+id/sasi10"
             android:layout_alignEnd="@+id/sasi10"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Gelombang-->
         <Button
@@ -143,7 +147,8 @@
             android:layout_below="@+id/sasi4"
             android:layout_alignStart="@+id/sasi4"
             android:layout_alignEnd="@+id/sasi4"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Gigi Haruan-->
         <Button
@@ -163,7 +168,8 @@
             android:layout_below="@+id/sasi5"
             android:layout_alignStart="@+id/sasi5"
             android:layout_alignEnd="@+id/sasi5"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Kambang Tampuk Manggis-->
         <Button
@@ -182,7 +188,8 @@
             android:text="Kambang Tampuk Manggis"
             android:gravity="center"
             android:layout_below="@+id/sasi6"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Naga Balimbur-->
         <Button
@@ -201,7 +208,8 @@
             android:text="Naga Balimbur"
             android:gravity="center"
             android:layout_below="@+id/sasi11"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Kangkung KAumbakan-->
         <Button
@@ -211,7 +219,8 @@
             android:background="@drawable/kangkungkaongbakan"
             android:layout_alignTop="@+id/sasi4"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            />
 
         <TextView
             android:id="@+id/txtsasi7"
@@ -221,7 +230,8 @@
             android:layout_below="@+id/sasi7"
             android:layout_alignStart="@+id/sasi7"
             android:layout_alignEnd="@+id/sasi7"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Kambang Sasaki-->
         <Button
@@ -241,7 +251,8 @@
             android:layout_below="@+id/sasi8"
             android:layout_alignStart="@+id/sasi8"
             android:layout_alignEnd="@+id/sasi8"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Kembang Kacang-->
         <Button
@@ -261,7 +272,8 @@
             android:layout_below="@+id/sasi9"
             android:layout_alignStart="@+id/sasi9"
             android:layout_alignEnd="@+id/sasi9"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Ombak Sinapur Karang-->
         <Button
@@ -281,7 +293,8 @@
             android:layout_below="@+id/sasi12"
             android:layout_alignStart="@+id/sasi12"
             android:layout_alignEnd="@+id/sasi12"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Ramak Sahang-->
         <Button
@@ -301,7 +314,8 @@
             android:layout_alignStart="@+id/sasi13"
             android:layout_alignEnd="@+id/sasi13"
             android:gravity="center"
-            android:text="Ramak Sahang"/>
+            android:text="Ramak Sahang"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Ular Lidi-->
         <Button
@@ -323,7 +337,8 @@
             android:layout_alignLeft="@+id/sasi14"
             android:layout_alignStart="@+id/sasi14"
             android:layout_alignRight="@+id/sasi14"
-            android:layout_alignEnd="@+id/sasi14" />
+            android:layout_alignEnd="@+id/sasi14"
+            android:textColor="@color/primaryTextColor"/>
 
         <!--Turun Dayang-->
         <Button
@@ -343,7 +358,8 @@
             android:layout_alignStart="@+id/sasi15"
             android:layout_alignEnd="@+id/sasi15"
             android:text="Turun Dayang"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"/>
 
     <Button
         android:id="@+id/btnHome"

@@ -12,75 +12,85 @@
     tools:context="com.example.c.sasirangan.MainActivity"
     android:background="@drawable/bg">  <!--ini background home-->
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SasiranganQ"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:id="@+id/judul"
-        android:textColor="@color/txt"
         android:layout_marginTop="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:background="#1AFFFFFF">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aplikasi Pengenalan Sasirangan Beserta Game"
-        android:textColor="@color/txt"
-        android:layout_below="@+id/judul"
-        android:gravity="center"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/ket" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SasiranganQ"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/judul"
+            android:textColor="@color/txt"
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/materi2"
-        android:layout_marginTop="30dp"
-        android:id="@+id/btnBelajar"
-        android:layout_below="@+id/ket"
-        android:layout_alignLeft="@+id/ket"
-        android:layout_alignStart="@+id/ket"
-        android:backgroundTint="#fff"/>
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Materi"
-        android:textColor="@color/txt"
-        android:textStyle="bold"
-        android:textSize="@dimen/btn"
-        android:gravity="center"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/btnBelajar"
-        android:layout_alignStart="@+id/btnBelajar"
-        android:layout_alignEnd="@+id/btnBelajar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi Pengenalan Sasirangan Beserta Game"
+            android:textColor="@color/txt"
+            android:layout_below="@+id/judul"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ket" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/game"
-        android:layout_alignTop="@+id/btnBelajar"
-        android:layout_alignRight="@+id/ket"
-        android:layout_alignEnd="@+id/ket"
-        android:id="@+id/btnBermain"
-        android:backgroundTint="#fff"/>
+        <Button
+            android:id="@+id/btnBelajar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/materi2"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/ket"
+            android:backgroundTint="#fff"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bermain"
-        android:textColor="@color/txt"
-        android:textStyle="bold"
-        android:textSize="@dimen/btn"
-        android:gravity="center"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/btnBermain"
-        android:layout_alignStart="@+id/btnBermain"
-        android:layout_alignEnd="@+id/btnBermain"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Materi"
+            android:textColor="@color/txt"
+            android:textStyle="bold"
+            android:textSize="@dimen/btn"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/btnBelajar"
+            android:layout_alignStart="@+id/btnBelajar"
+            android:layout_alignEnd="@+id/btnBelajar" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/game"
+            android:layout_below="@+id/ket"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/btnBermain"
+            android:backgroundTint="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bermain"
+            android:textColor="@color/txt"
+            android:textStyle="bold"
+            android:textSize="@dimen/btn"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/btnBermain"
+            android:layout_alignStart="@+id/btnBermain"
+            android:layout_alignEnd="@+id/btnBermain"/>
+    </RelativeLayout>
+
 </RelativeLayout>
