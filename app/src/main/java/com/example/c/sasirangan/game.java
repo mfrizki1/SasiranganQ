@@ -1,10 +1,13 @@
 package com.example.c.sasirangan;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -15,6 +18,7 @@ import org.w3c.dom.Text;
 public class game extends AppCompatActivity {
     //Buat Variabel
     TextView mtvSkor, mtvSoal;
+    ImageView mivGambar;
     RadioGroup mrgPilihanJawaban;
     RadioButton mrbPilihanJawaban1, mrbPilihanJawaban2, mrbPilihanJawaban3;
     Button mbtnSubmit;
@@ -33,6 +37,7 @@ public class game extends AppCompatActivity {
 
         mtvSkor = (TextView) findViewById(R.id.tvSkor);
         mtvSoal = (TextView) findViewById(R.id.tvSoal);
+        mivGambar = (ImageView) findViewById(R.id.ivGambar);
         mrgPilihanJawaban = (RadioGroup) findViewById(R.id.rgPilihanJawaban);
         mrbPilihanJawaban1 = (RadioButton) findViewById(R.id.rbPilihanJawaban1);
         mrbPilihanJawaban2 = (RadioButton) findViewById(R.id.rbPilihanJawaban2);
@@ -67,9 +72,18 @@ public class game extends AppCompatActivity {
             mrbPilihanJawaban1.setText(soalPG.getPilihanJawaban1(x));
             mrbPilihanJawaban2.setText(soalPG.getPilihanJawaban2(x));
             mrbPilihanJawaban3.setText(soalPG.getPilihanJawaban3(x));
+            ubahGambar();
             jawaban = soalPG.getJawabanBenar(x);
         }
         x++;
+    }
+
+    public void ubahGambar(){
+        Resources res = getResources();
+        String mPhoto = soalPG.getStringGambar(x);
+        int resID = res.getIdentifier(mPhoto, "drawable", getPackageName());
+        Drawable drawable = res.getDrawable(resID);
+        mivGambar.setImageDrawable(drawable);
     }
 
     public void cekJawaban() {

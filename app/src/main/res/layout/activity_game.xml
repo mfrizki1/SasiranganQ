@@ -29,13 +29,19 @@
             android:textSize="22sp"/>
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/lineSoal"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="400dp"
         android:layout_below="@+id/lineSkor"
         android:layout_margin="10dp"
         android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/ivGambar"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"/>
 
         <TextView
             android:id="@+id/tvSoal"
@@ -45,8 +51,10 @@
             android:background="#fff"
             android:gravity="center"
             android:padding="15dp"
-            android:textSize="20sp"/>
-    </LinearLayout>
+            android:textSize="20sp"
+            android:layout_below="@+id/ivGambar"/>
+
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/linePilihanJawaban"

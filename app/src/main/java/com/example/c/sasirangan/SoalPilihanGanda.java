@@ -6,7 +6,7 @@ public class SoalPilihanGanda {
     public String pertanyaan[] = {
             "Siapa nama presiden Indonesia yang pertama ?",
             "Ideologi dasar bagi negara Indonesia adalah ...",
-            "Bhinneka Tunggal Ika mempunyai arti ...",
+            "",
             "Ibukota negara Indonesia saat ini adalah ...",
             "Siapa yang menjajah Indonesia selama 350 tahun ?",
             "Saat masa penjajahan, senjata yang biasa digunakan oleh pahlawan Indonesia adalah ...",
@@ -16,7 +16,7 @@ public class SoalPilihanGanda {
     };
 
     private String pilihanJawaban[][] = {
-            {"Ir. Soekarno", "Joko Widodo", "Susilo Bambang Yudhoyono"},
+            {"bintang_bahambur", "daunjaruju", "gelombang"},
             {"UUD 1945","Pancasila","Bhinneka Tunggal Ika"},
             {"Berbeda-beda tetapi tetap satu","Bersama selamanya","Bersatu teguh bercerai runtuh"},
             {"Semarang","Surabaya","Jakarta"},
@@ -25,6 +25,24 @@ public class SoalPilihanGanda {
             {"Tugu Muda","Patung Pancoran","Monas"},
             {"Proklamasi","Pancasila","Pembukaan UUD 1945"},
             {"Jawa","Sumatera","Kalimantan"},
+    };
+
+    private String image[] = {
+            "bintang_bahambur",
+            "daunjaruju",
+            "gelombang",
+            "gigiharuan",
+            "",
+            "kambangsasaki",
+            "kangkungkaongbakan",
+            "kembangkacang",
+            "kulat_karikit",
+            "naga_balimbur",
+            "ombaksinapurkarang",
+            "rajabayam",
+            "ramaksahang",
+            "ular_lidi",
+            "turun_dayang"
     };
 
     private String jawabanBenar[] = {
@@ -38,6 +56,11 @@ public class SoalPilihanGanda {
             "Proklamasi",
             "Kalimantan",
     };
+
+    public String getStringGambar(int x){
+        String gambar = image[x];
+        return gambar;
+    }
 
     public String getPertanyaan(int x){
         String soal = pertanyaan[x];
