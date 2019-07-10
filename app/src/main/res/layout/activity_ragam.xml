@@ -40,326 +40,652 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/txtrgm"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia ut elit ac vehicula. Donec lobortis a ligula et porttitor. Donec consequat mi vitae lectus cond"
-        android:textColor="@color/primaryTextColor"
-        android:layout_below="@+id/jdlrgm"
-        android:layout_marginTop="15dp"/>
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnHome"
+        android:layout_below="@+id/garis1">
 
-        <!--Raja Bayam-->
-        <Button
-            android:id="@+id/sasi1"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/rajabayam"
-            android:layout_below="@id/txtrgm"
-            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txtsasi1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Raja Bayam"
-            android:layout_below="@+id/sasi1"
-            android:layout_alignStart="@+id/sasi1"
-            android:layout_alignEnd="@+id/sasi1"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+            <!--cardview1-->
+            <LinearLayout
+                android:id="@+id/lytRagam1"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/garis1">
 
-        <!--Bintang Bahambur-->
-        <Button
-            android:id="@+id/sasi2"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/bintang_bahambur"
-            android:layout_below="@id/txtsasi1"
-            android:layout_marginTop="15dp"/>
+                <!--Raja Bayam-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/rajabayam"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
 
-        <TextView
-            android:id="@+id/txtsasi2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bintang Bahambur"
-            android:layout_below="@+id/sasi2"
-            android:layout_alignStart="@+id/sasi2"
-            android:layout_alignEnd="@+id/sasi2"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
 
-        <!--Daun Jaruju-->
-        <Button
-            android:id="@+id/sasi3"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/daunjaruju"
-            android:layout_below="@id/txtsasi2"
-            android:layout_marginTop="15dp"/>
+                        <ImageView
+                            android:id="@+id/imgrajabayam"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/rajabayam"/>
 
-        <TextView
-            android:id="@+id/txtsasi3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Daun Jaruju"
-            android:layout_below="@+id/sasi3"
-            android:layout_alignStart="@+id/sasi3"
-            android:layout_alignEnd="@+id/sasi3"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                        <TextView
+                            android:id="@+id/txtrajabayam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Raja Bayam"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"/>
 
-        <!--Kulat Karikit-->
-        <Button
-            android:id="@+id/sasi10"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/kulat_karikit"
-            android:layout_below="@+id/txtsasi9"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
 
-        <TextView
-            android:id="@+id/txtsasi10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kulat Karikit"
-            android:layout_below="@+id/sasi10"
-            android:layout_alignStart="@+id/sasi10"
-            android:layout_alignEnd="@+id/sasi10"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                <!--gelombang-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/gelombang"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
 
-        <!--Gelombang-->
-        <Button
-            android:id="@+id/sasi4"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/gelombang"
-            android:layout_alignTop="@+id/sasi1"
-            android:layout_centerHorizontal="true" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
 
-        <TextView
-            android:id="@+id/txtsasi4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gelombang"
-            android:layout_below="@+id/sasi4"
-            android:layout_alignStart="@+id/sasi4"
-            android:layout_alignEnd="@+id/sasi4"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                        <ImageView
+                            android:id="@+id/imgalat"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/gelombang"/>
 
-        <!--Gigi Haruan-->
-        <Button
-            android:id="@+id/sasi5"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/gigiharuan"
-            android:layout_below="@+id/txtsasi4"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gelombang"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtalat" />
 
-        <TextView
-            android:id="@+id/txtsasi5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gigi Haruan"
-            android:layout_below="@+id/sasi5"
-            android:layout_alignStart="@+id/sasi5"
-            android:layout_alignEnd="@+id/sasi5"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
 
-        <!--Kambang Tampuk Manggis-->
-        <Button
-            android:id="@+id/sasi6"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/kambang_tampuk_manggis"
-            android:layout_alignTop="@+id/sasi3"
-            android:layout_alignLeft="@+id/txtsasi5"
-            android:layout_alignStart="@+id/txtsasi5" />
+                <!--kangkung-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kangkung"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="10dp"
 
-        <TextView
-            android:id="@+id/txtsasi6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kambang Tampuk Manggis"
-            android:gravity="center"
-            android:layout_below="@+id/sasi6"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/primaryTextColor"/>
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
 
-        <!--Naga Balimbur-->
-        <Button
-            android:id="@+id/sasi11"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/naga_balimbur"
-            android:layout_below="@+id/txtsasi9"
-            android:layout_alignLeft="@+id/sasi6"
-            android:layout_alignStart="@+id/sasi6" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
 
-        <TextView
-            android:id="@+id/txtsasi11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Naga Balimbur"
-            android:gravity="center"
-            android:layout_below="@+id/sasi11"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/primaryTextColor"/>
+                        <ImageView
+                            android:id="@+id/imgalat"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/kangkungkaongbakan"/>
 
-        <!--Kangkung KAumbakan-->
-        <Button
-            android:id="@+id/sasi7"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/kangkungkaongbakan"
-            android:layout_alignTop="@+id/sasi4"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kangkung Kaumbakan"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtalat" />
 
-        <TextView
-            android:id="@+id/txtsasi7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kangkung Kaumbakan"
-            android:layout_below="@+id/sasi7"
-            android:layout_alignStart="@+id/sasi7"
-            android:layout_alignEnd="@+id/sasi7"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
 
-        <!--Kambang Sasaki-->
-        <Button
-            android:id="@+id/sasi8"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/kambangsasaki"
-            android:layout_alignTop="@+id/sasi5"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/txtsasi8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kambang Sasaki"
-            android:layout_below="@+id/sasi8"
-            android:layout_alignStart="@+id/sasi8"
-            android:layout_alignEnd="@+id/sasi8"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+            <!--cardview2-->
+            <LinearLayout
+                android:id="@+id/lytRagam2"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lytRagam1">
 
-        <!--Kembang Kacang-->
-        <Button
-            android:id="@+id/sasi9"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/kembangkacang"
-            android:layout_above="@+id/txtsasi6"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+                <!--Bintang Bahambur-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/bintangbahambur"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
 
-        <TextView
-            android:id="@+id/txtsasi9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kembang Kacang"
-            android:layout_below="@+id/sasi9"
-            android:layout_alignStart="@+id/sasi9"
-            android:layout_alignEnd="@+id/sasi9"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
 
-        <!--Ombak Sinapur Karang-->
-        <Button
-            android:id="@+id/sasi12"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/ombaksinapurkarang"
-            android:layout_above="@+id/txtsasi11"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+                        <ImageView
+                            android:id="@+id/imgbintangbahambur"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/bintang_bahambur"/>
 
-        <TextView
-            android:id="@+id/txtsasi12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ombak Sinapur Karang"
-            android:layout_below="@+id/sasi12"
-            android:layout_alignStart="@+id/sasi12"
-            android:layout_alignEnd="@+id/sasi12"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                        <TextView
+                            android:id="@+id/txtbintangbahambur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bintang Bahambur"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"/>
 
-        <!--Ramak Sahang-->
-        <Button
-            android:id="@+id/sasi13"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/ramaksahang"
-            android:layout_alignTop="@+id/sasi14"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
 
-        <TextView
-            android:id="@+id/txtsasi13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/sasi13"
-            android:layout_alignStart="@+id/sasi13"
-            android:layout_alignEnd="@+id/sasi13"
-            android:gravity="center"
-            android:text="Ramak Sahang"
-            android:textColor="@color/primaryTextColor"/>
+                <!--Gigi Haruan-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/gigiharuan"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
 
-        <!--Ular Lidi-->
-        <Button
-            android:id="@+id/sasi14"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/ular_lidi"
-            android:layout_below="@+id/txtsasi12"
-            android:layout_alignLeft="@+id/txtsasi11"
-            android:layout_alignStart="@+id/txtsasi11" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
 
-        <TextView
-            android:id="@+id/txtsasi14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ular Lidi"
-            android:gravity="center"
-            android:layout_below="@+id/sasi14"
-            android:layout_alignLeft="@+id/sasi14"
-            android:layout_alignStart="@+id/sasi14"
-            android:layout_alignRight="@+id/sasi14"
-            android:layout_alignEnd="@+id/sasi14"
-            android:textColor="@color/primaryTextColor"/>
+                        <ImageView
+                            android:id="@+id/imggigiharuan"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/gigiharuan"/>
 
-        <!--Turun Dayang-->
-        <Button
-            android:id="@+id/sasi15"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/turun_dayang"
-            android:layout_below="@+id/txtsasi12"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gigi Haruan"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtgigiharuan" />
 
-        <TextView
-            android:id="@+id/txtsasi15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/sasi15"
-            android:layout_alignStart="@+id/sasi15"
-            android:layout_alignEnd="@+id/sasi15"
-            android:text="Turun Dayang"
-            android:gravity="center"
-            android:textColor="@color/primaryTextColor"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--Kambang Sasaki-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kambangsasaki"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgkambangsasaki"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/kambangsasaki"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kambang Sasaki"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtkambangsasaki" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!--cardview3-->
+            <LinearLayout
+                android:id="@+id/lytRagam3"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lytRagam2">
+
+                <!--Daun Jaruju-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/daunjaruju"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgdaunjaruju"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/daunjaruju"/>
+
+                        <TextView
+                            android:id="@+id/txtdaunjaruju"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Daun Jaruju"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--Kambang Tampuk Manggis-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/tampukmanggis"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgtampukmanggis"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/kambang_tampuk_manggis"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kambang Tampuk Manggis"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txttampukmanggis" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--Kembang Kacang-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kembangkacang"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgkembangkacang"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/kembangkacang"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kembang Kacang"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtkembangkacang" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!--cardview4-->
+            <LinearLayout
+                android:id="@+id/lytRagam4"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lytRagam3">
+
+                <!--Kulat Karikit-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kulatkarikit"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgkulatkarikit"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/kulat_karikit"/>
+
+                        <TextView
+                            android:id="@+id/txtkulatkarikit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kulat Karikit"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--Naga Balimbur-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/nagabalimbur"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgnagabalimbur"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/naga_balimbur"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Naga Balimbur"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtnagabalimbur" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--Ombak Sinapur Karang-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ombaksinapur"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgombaksinapur"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ombaksinapurkarang"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ombak Sinapur Karang"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtombaksinapur" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!--cardview5-->
+            <LinearLayout
+                android:id="@+id/lytRagam5"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lytRagam4">
+
+                <!--Ramak Sahang-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ramaksahang"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgramaksahang"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ramaksahang"/>
+
+                        <TextView
+                            android:id="@+id/txtramaksahang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ramak Sahang"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--Ular Lidi-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ularlidi"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgularlidi"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ular_lidi"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ular Lidi"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtularlidi" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--Turun Dayang-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/turundayang"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgturundayang"
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/turun_dayang"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Turun Dayang"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txtturundayang" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <Button
         android:id="@+id/btnHome"
@@ -369,3 +695,381 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--tools:context="com.example.c.sasirangan.ragam"-->
+    <!--android:background="#FFFFF2F4">-->
+
+    <!--<View-->
+        <!--android:id="@+id/garis"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.8dp"-->
+        <!--android:background="#000"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/jdlrgm"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Ragam Sasirangan"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="@color/primaryTextColor"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_alignTop="@+id/garis"/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/garis1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.8dp"-->
+        <!--android:background="#000"-->
+        <!--android:layout_below="@+id/jdlrgm"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtrgm"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia ut elit ac vehicula. Donec lobortis a ligula et porttitor. Donec consequat mi vitae lectus cond"-->
+        <!--android:textColor="@color/primaryTextColor"-->
+        <!--android:layout_below="@+id/jdlrgm"-->
+        <!--android:layout_marginTop="12dp"/>-->
+
+        <!--&lt;!&ndash;Raja Bayam&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi1"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/rajabayam"-->
+            <!--android:layout_below="@id/txtrgm"-->
+            <!--android:layout_marginTop="12dp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Raja Bayam"-->
+            <!--android:layout_below="@+id/sasi1"-->
+            <!--android:layout_alignStart="@+id/sasi1"-->
+            <!--android:layout_alignEnd="@+id/sasi1"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Bintang Bahambur&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi2"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/bintang_bahambur"-->
+            <!--android:layout_below="@id/txtsasi1"-->
+            <!--android:layout_marginTop="12dp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Bintang Bahambur"-->
+            <!--android:layout_below="@+id/sasi2"-->
+            <!--android:layout_alignStart="@+id/sasi2"-->
+            <!--android:layout_alignEnd="@+id/sasi2"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Daun Jaruju&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi3"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/daunjaruju"-->
+            <!--android:layout_below="@id/txtsasi2"-->
+            <!--android:layout_marginTop="12dp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Daun Jaruju"-->
+            <!--android:layout_below="@+id/sasi3"-->
+            <!--android:layout_alignStart="@+id/sasi3"-->
+            <!--android:layout_alignEnd="@+id/sasi3"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Kulat Karikit&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi10"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/kulat_karikit"-->
+            <!--android:layout_below="@+id/txtsasi9"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi10"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Kulat Karikit"-->
+            <!--android:layout_below="@+id/sasi10"-->
+            <!--android:layout_alignStart="@+id/sasi10"-->
+            <!--android:layout_alignEnd="@+id/sasi10"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Gelombang&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi4"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/gelombang"-->
+            <!--android:layout_alignTop="@+id/sasi1"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Gelombang"-->
+            <!--android:layout_below="@+id/sasi4"-->
+            <!--android:layout_alignStart="@+id/sasi4"-->
+            <!--android:layout_alignEnd="@+id/sasi4"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Gigi Haruan&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi5"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/gigiharuan"-->
+            <!--android:layout_below="@+id/txtsasi4"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="12dp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Gigi Haruan"-->
+            <!--android:layout_below="@+id/sasi5"-->
+            <!--android:layout_alignStart="@+id/sasi5"-->
+            <!--android:layout_alignEnd="@+id/sasi5"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Kambang Tampuk Manggis&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi6"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/kambang_tampuk_manggis"-->
+            <!--android:layout_alignTop="@+id/sasi3"-->
+            <!--android:layout_alignLeft="@+id/txtsasi5"-->
+            <!--android:layout_alignStart="@+id/txtsasi5" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Kambang Tampuk Manggis"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_below="@+id/sasi6"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Naga Balimbur&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi11"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/naga_balimbur"-->
+            <!--android:layout_below="@+id/txtsasi9"-->
+            <!--android:layout_alignLeft="@+id/sasi6"-->
+            <!--android:layout_alignStart="@+id/sasi6" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi11"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Naga Balimbur"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_below="@+id/sasi11"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Kangkung KAumbakan&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi7"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/kangkungkaongbakan"-->
+            <!--android:layout_alignTop="@+id/sasi4"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi7"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Kangkung Kaumbakan"-->
+            <!--android:layout_below="@+id/sasi7"-->
+            <!--android:layout_alignStart="@+id/sasi7"-->
+            <!--android:layout_alignEnd="@+id/sasi7"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Kambang Sasaki&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi8"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/kambangsasaki"-->
+            <!--android:layout_alignTop="@+id/sasi5"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi8"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Kambang Sasaki"-->
+            <!--android:layout_below="@+id/sasi8"-->
+            <!--android:layout_alignStart="@+id/sasi8"-->
+            <!--android:layout_alignEnd="@+id/sasi8"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Kembang Kacang&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi9"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/kembangkacang"-->
+            <!--android:layout_above="@+id/txtsasi6"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi9"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Kembang Kacang"-->
+            <!--android:layout_below="@+id/sasi9"-->
+            <!--android:layout_alignStart="@+id/sasi9"-->
+            <!--android:layout_alignEnd="@+id/sasi9"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Ombak Sinapur Karang&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi12"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/ombaksinapurkarang"-->
+            <!--android:layout_above="@+id/txtsasi11"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi12"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Ombak Sinapur Karang"-->
+            <!--android:layout_below="@+id/sasi12"-->
+            <!--android:layout_alignStart="@+id/sasi12"-->
+            <!--android:layout_alignEnd="@+id/sasi12"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Ramak Sahang&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi13"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/ramaksahang"-->
+            <!--android:layout_alignTop="@+id/sasi14"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi13"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/sasi13"-->
+            <!--android:layout_alignStart="@+id/sasi13"-->
+            <!--android:layout_alignEnd="@+id/sasi13"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Ramak Sahang"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Ular Lidi&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi14"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/ular_lidi"-->
+            <!--android:layout_below="@+id/txtsasi12"-->
+            <!--android:layout_alignLeft="@+id/txtsasi11"-->
+            <!--android:layout_alignStart="@+id/txtsasi11" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi14"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Ular Lidi"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_below="@+id/sasi14"-->
+            <!--android:layout_alignLeft="@+id/sasi14"-->
+            <!--android:layout_alignStart="@+id/sasi14"-->
+            <!--android:layout_alignRight="@+id/sasi14"-->
+            <!--android:layout_alignEnd="@+id/sasi14"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+        <!--&lt;!&ndash;Turun Dayang&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/sasi15"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/turun_dayang"-->
+            <!--android:layout_below="@+id/txtsasi12"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtsasi15"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/sasi15"-->
+            <!--android:layout_alignStart="@+id/sasi15"-->
+            <!--android:layout_alignEnd="@+id/sasi15"-->
+            <!--android:text="Turun Dayang"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/primaryTextColor"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnHome"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@drawable/ic_home"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+<!--</RelativeLayout>-->

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.c.sasirangan.DaunJaruju"
+    tools:context="com.example.sasirangan.DaunJaruju"
     android:background="#FFFFF2F4">
 
     <LinearLayout
@@ -24,20 +24,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="190dp">
 
-        <TextView
-            android:id="@+id/jdldaun"
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Daun Jaruju"
-            android:textSize="30sp"
+            android:id="@+id/button"
+            android:textSize="24sp"
             android:textColor="#E6FFFFFF"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="165dp"
-            android:layout_height="2dp"
-            android:background="#E6FFFFFF"
-            android:layout_below="@id/jdldaun" />
+            android:textStyle="bold"
+            android:text="Daun Jaruju"
+            android:background="#6F000000"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"/>
 
     </RelativeLayout>
 
@@ -49,33 +47,16 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@+id/bntg"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:background="#0F0F0000">
 
-        <TextView
+        <me.biubiubiu.justifytext.library.JustifyTextView
             android:id="@+id/ket1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:text="      Motif Batik Sasirangan Daun Jaruju bermakna sebagai penolak bala.Karena jenis daun Jaruju ini berduri, sehingga sering dimanfaatkan sebagai pengusir tikus.Biasanya orang –orang dahulu meletakkan daun jaruju ini di sudut rumah agar tikus tidak bisa masuk ke rumah."
             android:textColor="@color/primaryTextColor"
-            android:textSize="12dp"/>
-
-        <TextView
-            android:id="@+id/ket2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            android:textColor="@color/primaryTextColor"
-            android:textSize="12dp"
-            android:layout_below="@+id/ket1"/>
-
-        <TextView
-            android:id="@+id/ket3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            android:textColor="@color/primaryTextColor"
-            android:textSize="12dp"
-            android:layout_below="@+id/ket2"/>
+            android:textSize="20dp"/>
 
     </RelativeLayout>
 

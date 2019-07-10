@@ -13,30 +13,211 @@
         tools:context="com.example.c.sasirangan.belajar"
         android:background="#FFFFF2F4">
 
-        <Button
+        <!--cardview1-->
+    <LinearLayout
+        android:id="@+id/lyt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.2in"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--Sejarah-->
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/sejarah"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/sejarah"
-            android:layout_marginTop="115dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="50dp"/>
+            android:layout_width="125dp"
+            android:layout_height="110dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgsejarah"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sejarah" />
+
+                <TextView
+                    android:id="@+id/txtsejarah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sejarah"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--Alat-->
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/alat"
+            android:layout_width="125dp"
+            android:layout_height="110dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgalat"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/alat" />
+
+                <TextView
+                    android:id="@+id/txtalat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Alat"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+        <!--cardview2-->
+        <LinearLayout
+            android:id="@+id/lyt2"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sejarah"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="@dimen/btn"
-            android:textStyle="bold"
             android:gravity="center"
-            android:id="@+id/txtsejarah"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/sejarah"
-            android:layout_alignStart="@+id/sejarah"
-            android:layout_alignEnd="@+id/sejarah" />
+            android:orientation="horizontal"
+            android:layout_below="@+id/lyt1"
+            android:layout_marginTop="25dp">
 
-        <Button
+            <!--Ragam-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/ragam"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="125dp"
+                android:layout_height="110dp"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgragam"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ragam"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ragam"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/txtragam" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--Cara-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cara"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="125dp"
+                android:layout_height="110dp"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgcara"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/cara"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cara Pembuatan"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:id="@+id/txtcara" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_home"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+        <!--<Button-->
+            <!--android:id="@+id/sejarah"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:background="@drawable/sejarah"-->
+            <!--android:layout_marginTop="115dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="50dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Sejarah"-->
+            <!--android:textColor="@color/primaryTextColor"-->
+            <!--android:textSize="@dimen/btn"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/txtsejarah"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_below="@+id/sejarah"-->
+            <!--android:layout_alignStart="@+id/sejarah"-->
+            <!--android:layout_alignEnd="@+id/sejarah" />-->
+
+        <!--<Button
             android:id="@+id/ragam"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -116,5 +297,5 @@
             android:layout_height="40dp"
             android:background="@drawable/ic_home"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true" />-->
     </RelativeLayout>

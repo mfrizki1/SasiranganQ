@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sasirangan.DaunJaruju"
+    android:background="#FFFFF2F4">
+
+    <LinearLayout
+        android:id="@+id/bntg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/daunjaruju" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:textSize="24sp"
+            android:textColor="#E6FFFFFF"
+            android:textStyle="bold"
+            android:text="Daun Jaruju"
+            android:background="#6F000000"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/bntg"
+        android:layout_marginTop="5dp"
+        android:background="#0F0F0000">
+
+        <TextView
+            android:id="@+id/ket1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Motif Batik Sasirangan Daun Jaruju bermakna sebagai penolak bala.Karena jenis daun Jaruju ini berduri, sehingga sering dimanfaatkan sebagai pengusir tikus.Biasanya orang –orang dahulu meletakkan daun jaruju ini di sudut rumah agar tikus tidak bisa masuk ke rumah."
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

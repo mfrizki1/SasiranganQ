@@ -2,30 +2,34 @@ package com.example.c.sasirangan;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 public class game extends AppCompatActivity {
     //Buat Variabel
-    TextView mtvSkor, mtvSoal;
+    TextView mtvSkor, mtvSoal,mtxtSkor;
     ImageView mivGambar;
     RadioGroup mrgPilihanJawaban;
     RadioButton mrbPilihanJawaban1, mrbPilihanJawaban2, mrbPilihanJawaban3;
     Button mbtnSubmit;
+
     int skor = 0;
     int arr;
     int x;
     String jawaban;
+    MediaPlayer audioBackground;
+
 
     //Manggil objek dari class SoalPilihanGanda
     SoalPilihanGanda soalPG = new SoalPilihanGanda();
@@ -37,12 +41,24 @@ public class game extends AppCompatActivity {
 
         mtvSkor = (TextView) findViewById(R.id.tvSkor);
         mtvSoal = (TextView) findViewById(R.id.tvSoal);
+        mtxtSkor = (TextView)findViewById(R.id.txtskor);
         mivGambar = (ImageView) findViewById(R.id.ivGambar);
         mrgPilihanJawaban = (RadioGroup) findViewById(R.id.rgPilihanJawaban);
         mrbPilihanJawaban1 = (RadioButton) findViewById(R.id.rbPilihanJawaban1);
         mrbPilihanJawaban2 = (RadioButton) findViewById(R.id.rbPilihanJawaban2);
         mrbPilihanJawaban3 = (RadioButton) findViewById(R.id.rbPilihanJawaban3);
         mbtnSubmit = (Button) findViewById(R.id.btnSubmit);
+
+        audioBackground = MediaPlayer.create(this, R.raw.lagu);
+        audioBackground.setLooping(true);
+        audioBackground.start();
+
+        Typeface font1=Typeface.createFromAsset(getAssets(),"font/Wonderingserif-Regular.ttf");
+        mtvSoal.setTypeface(font1);
+
+        Typeface font2=Typeface.createFromAsset(getAssets(),"font/AgenzadaDemo-Italic.otf");
+        mtxtSkor.setTypeface(font2);
+        mtvSkor.setTypeface(font2);
 
         //set konten
         mtvSkor.setText(""+skor);
@@ -67,6 +83,9 @@ public class game extends AppCompatActivity {
             i.putExtra("skorAkhir", jumlahSkor);
             i.putExtra("activity","PilihanGanda");
             startActivity(i);
+            audioBackground.setVolume(1,1);
+            audioBackground.stop();
+
         }else{
             mtvSoal.setText(soalPG.getPertanyaan(x));
             mrbPilihanJawaban1.setText(soalPG.getPilihanJawaban1(x));

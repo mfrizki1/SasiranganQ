@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.c.sasirangan.Print"
+    android:background="#FFFFF2F4">
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/prt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cara Membuat Sasirangan Printing"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/garis"/>
+
+    <View
+        android:id="@+id/garis1"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        android:layout_below="@+id/prt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imgprt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/cara_pembuatan_printing"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prt"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgprt"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/btnHome">
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="      Sasirangan printing atau batik sablon adalah jenis sasirangan baru yang mana cara pembuatannya melalui proses sablon manual atau printing mesin pabrik. Seperti namnaya, teknik pembuatan sasirangan  ini sama sperti pembuatan spanduk hanya saja bedanya adalah pada bahan warna yang digunakan.\nBerikut adalah peralatan yang digunakan:\n1.  Desain dalam ukuran satu bahan, dengan ukuran2x1m\n2.  Plankan yang digunakan untuk sasirangan adalah plankan dengan pori-pori lebih besar, berbeda dengan planan untuk spanduk atau kaos.\n3.  Pewarna, kain mori dan valet\nBerikut langkah-langkah proses pembuatannya:\n1.  Siapkan desain\n2.  Cetak desain dalam plankan. Jumlah plankan yang dibutuhkan adalah sesuai dengan jumlah warna yang akan digunakan\n3.  Siapkan kain mori dasar yang akan disablon, dengan posisi kain mori yang kencang\n4.  Letakan plankan diatas kain, lalu tuangkan pewarna dan tarik pewarna dari ujung plankan ke ujung plankan lainya dengan valet\n5.  Keringkan kain mori yang telah diberikan warna.\n6.  Ulangi langah di atas, untuk setiap perbedaan warna dan desain\n"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="15dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_home"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -39,6 +39,20 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:id="@+id/btntradisional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:text="Tradisional" />
+
+    <Button
+        android:id="@+id/btnprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btntradisional"
+        android:layout_marginTop="11dp"
+        android:text="Printing" />
 
 
 </RelativeLayout>

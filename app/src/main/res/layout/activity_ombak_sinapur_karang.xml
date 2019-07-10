@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.c.sasirangan.Gelombang"
+    tools:context="com.example.sasirangan.OmbakSinapurKarang"
     android:background="#FFFFF2F4">
 
     <LinearLayout
@@ -24,20 +24,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="190dp">
 
-        <TextView
-            android:id="@+id/jdlombak"
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ombak Sinapur Karang"
-            android:textSize="30sp"
+            android:id="@+id/button"
+            android:textSize="24sp"
             android:textColor="#E6FFFFFF"
-            android:textStyle="bold"/>
-
-        <View
-            android:layout_width="305dp"
-            android:layout_height="2dp"
-            android:background="#E6FFFFFF"
-            android:layout_below="@id/jdlombak" />
+            android:textStyle="bold"
+            android:text="Ombak Sinapur Karang"
+            android:background="#6F000000"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"/>
 
     </RelativeLayout>
 
@@ -49,33 +47,16 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_below="@+id/bntg"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:background="#0F0F0000">
 
-        <TextView
+        <me.biubiubiu.justifytext.library.JustifyTextView
             android:id="@+id/ket1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:text="      Ombak sinapur karanag atau ombak yang menerjang karang. Memiliki makna filosofi sebagai manusia harus kuat dan kokoh layaknya karang. Ketika cobaan menerjang manusia memiliki sikap tabah dan tak tergoyahkan.\n"
             android:textColor="@color/primaryTextColor"
-            android:textSize="12dp"/>
-
-        <TextView
-            android:id="@+id/ket2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            android:textColor="@color/primaryTextColor"
-            android:textSize="12dp"
-            android:layout_below="@+id/ket1"/>
-
-        <TextView
-            android:id="@+id/ket3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            android:textColor="@color/primaryTextColor"
-            android:textSize="12dp"
-            android:layout_below="@+id/ket2"/>
+            android:textSize="20dp"/>
 
     </RelativeLayout>
 

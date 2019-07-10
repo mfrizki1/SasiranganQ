@@ -3,29 +3,31 @@ package com.example.c.sasirangan;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class belajar extends AppCompatActivity implements View.OnClickListener {
 
-    Button sejarah;
-    Button ragam;
-    Button alat;
-    Button cara;
+    CardView sejarah;
+    CardView ragam;
+    CardView alat;
+    CardView cara;
     Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_belajar);
-        sejarah = (Button) findViewById(R.id.sejarah);
+        sejarah = (CardView) findViewById(R.id.sejarah);
         sejarah.setOnClickListener(this);
-        ragam = (Button) findViewById(R.id.ragam);
+        ragam = (CardView) findViewById(R.id.ragam);
         ragam.setOnClickListener(this);
-        alat = (Button) findViewById(R.id.alat);
+        alat = (CardView) findViewById(R.id.alat);
         alat.setOnClickListener(this);
-        cara = (Button) findViewById(R.id.cara);
+        cara = (CardView) findViewById(R.id.cara);
         cara.setOnClickListener(this);
         home = (Button)findViewById(R.id.btnHome);
         home.setOnClickListener(this);

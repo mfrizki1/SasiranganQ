@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.c.sasirangan.Tradisional"
+    android:background="#FFFFF2F4">
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/trd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cara Membuat Sasirangan Tradisional"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/garis"/>
+
+    <View
+        android:id="@+id/garis1"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#000"
+        android:layout_below="@+id/trd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/garis1"
+        android:layout_above="@+id/btnHome">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/imgtrd"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/pembuatan_sasirangan"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/trd"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/texView"
+                android:text="      Proses pembuatan kain sasirangan saat ini bersifat terbuka, artinya siapa saja dapat melakukan pembuatan kain khas Banjar tersebut, asal memiliki keterampilan. Diperlukan adanya kesungguhan, ketelitian dan kecermatan, sehingga menghasilkan selembar kain sasirangan yang baik, sempurna dan bermutu. Secara kronologis proses pembuatan kain sasirangan adalah sebagai berikut :\n1. Mula-mula pada kain puti dilukis suatu motif sasirangan yang diinginkan. Kain yang akan dilukis tersebut telah dipotong menurut ukuran yang diinginkan, misalnya 2 meter atau 3 meter. Kain putih ini bisa dari bahan katun, santung, balacu,kaci, king, primasima satin atau sutera sesuai yang diinginkan. Melukis cukup dengan mempergunakan pensil biasa asalkan hasil garis-garis lukisan tersebut tampak dengan jelas. Pekerjaan melukis atau menggambar ini dapat dibedakan dalam dua cara, yaitu:\n      Melukis atau menggambar dengan langsung dan bebas sesuai dengan lukisan atau gambar apa yang diinginkan, misalnya melukis selembar daun, bunga, bintang dan lain-lain.lukis-motif-kain-sasirangan. Melukis atau menggambar dengan mempergunakan pola atau mal yang telah ada. Lukisan atau gambar yang dihasilkan tentu saja telah terikat dengan pola yang sudah ada. Pola atau mal yang telah tersedia tersebut terdiri dari sepotong karton tebal yang telah berlubang berupa garis lurus, garis lengkung, bundar dan sebagainya. Pola atau mal itu diletakan di atas kain putih yang akan dilukis. Setelah selesai, pola atau mail itu diletakan lagi ke samping kain tersebut untuk mendapatkan gambar yang sama. Pekerjaan ini sebenarnya bukan melukis atau menggambar, tetapi hanya menggaris-garis dengan pensil menurut alur garis-garis sesuai pola yang sudah ada. Motif gambar yang dihasilkan umumnya adalah untuk mendapat kain sasirangan yang seragam motifnya dalam jumlah banyak.\n2. Menjahit atau menjelujur\n      Setelah lukisan selesai tergambar pada lembaran kain putih tersebut, pekerjaan berikutnya adalah menjahit. Dengan mempergunakan jarum tangan yang telah diberi benang yang kuat. Kain tersebut dijelujur (dijahit) mengikuti garis-garis hasil lukisan. Kadang-kadang jahitan itu bisa saja berupa ikatan dengan benang. Setelah jelujur dengan benang telah selesai untuk selembar kain, maka benang-benang tersebut disisit (ditarik kuat), sehingga tampak hasilnya berupa kain yang dijelujur tersebut menjadi takarucut (mengkerut)\n3. Memberi warna\n      Baskom yang telah disediakan ditaburi zat pewarna yang diinginkan, kemudian dicarikan dengan ait panas, dan diaduk dengan wancuh atau potongan kayu sampai cairan warna benar-benar telah merata. Setelah cairan warna sudah agak dingin, kain yang telah dijelujur dicelupkan ke dalam baskom yang berisi cairan perwarna tersebut. Pada saat mencelupkan kain kedalam baskom, kedua belah tangan harus menggunakan sarung tangan dari karet tebal yang panjangnya sampai ke siku. Kain yang diberi warna tersebut tidak sekedar dicelupkan begitu s aja ke dalam baskom, tetapi harus diremas-remas, dibolak-balik beberapa kali, sehingga warna yang diinginkan benar-benar telah merata dengan baik pada kain. Pekerjaan ini biasanya berlangsung antara 5 sampai 10 menit. Setelah selesai memberi warna di dalam baskom tersebut kain itu kemudian ditempatkan pada balok rentak guna dikeringkan, tetapi tidak dijemur langsung kena cahaya matahari. Perendaman kain ke dalam baskom ini bisa beberapa kali, sesuai dengan jumlah warna yang diinginkan. Kain yang telah diberi warna tersebut ditiisakan (dikeringkan airnnya dengan cara dibiarkan) lebih kurang 30 menit\n4. Melepaskan benang jahitan\n      Apabila kain yang telah diberi warna tersebut sudah agak kering, selanjutnya kain ini digelar di atas tikar purun, benang-benang jahitan atau ikatan pada kain tersebut dilepaskan seluruhnya. Akan tampai kain tersebut telah berwarna dengan warna yang diinginkan. Apabila terdapat bagian-bagian tertentu warnanya belum sempurnya, makan secara hati-hati diberikan lagi dengan warna yang dikehendaki atau terapat pula tambahan warna yang lain dengan pekerjaan tambahan yang disebut mencacak, dengan menggunakan kapas yang diikatkan pada sebatang bilah seperti pensil.\n5. Pengawetan warna\n      Selanjutnya dilakukan pencelupan ke dalam larutan pengawet warna selama beberapa menit, maksudnya agar warna kain sasirangan tersebut dapat awet.\n6. Dicuci dan dikeringkan\n      Selanjutnya kain yang sudah selesai diberi warna dan cairan pengawet itu dicuci dan dikeringkan. Mengeringkan kain tersebut dengan cara dijemur ditempat yang teduh dan tidak kena sinar matahari secara langsung.\n7. Disetrika\n      Setelah kain tersebut benar-benar telah kering, selanjutnya kain sasirangan disetrika agar kain sasirangan ini menjadi licin. Jadilah selembar kain Khas Banjar yaitu Kain Sasirangan\n Untu lebih paham lagi bagaimana cara pembuatan kain sasirangan, Untuk lebih lanjut bisa simak video dibawah ini"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_home"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

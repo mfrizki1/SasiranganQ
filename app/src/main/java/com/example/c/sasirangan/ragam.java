@@ -3,11 +3,14 @@ package com.example.c.sasirangan;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class ragam extends AppCompatActivity {
-    private Button button;
+    private static CardView cv;
+    private static Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +20,8 @@ public class ragam extends AppCompatActivity {
     }
 
     public void OnClickListener(){
-        button = (Button)findViewById(R.id.sasi1);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView) findViewById(R.id.rajabayam);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, RajaBayam.class);
@@ -26,8 +29,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi2);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.bintangbahambur);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, BintangBahambur.class);
@@ -35,8 +38,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi3);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.daunjaruju);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, DaunJaruju.class);
@@ -44,8 +47,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi10);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.kulatkarikit);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, KulatKarikit.class);
@@ -53,8 +56,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi4);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.gelombang);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, Gelombang.class);
@@ -62,8 +65,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi5);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.gigiharuan);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, GigiHaruan.class);
@@ -71,8 +74,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi6);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.tampukmanggis);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, KambangTampukManggis.class);
@@ -80,8 +83,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi11);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.nagabalimbur);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, NagaBalimbur.class);
@@ -89,8 +92,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi7);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.kangkung);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, KangkungKaumbakan.class);
@@ -98,8 +101,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi8);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.kambangsasaki);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, KambangSasaki.class);
@@ -107,8 +110,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi9);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.kembangkacang);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, KembangKacang.class);
@@ -116,8 +119,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi12);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.ombaksinapur);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, OmbakSinapurKarang.class);
@@ -125,8 +128,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi13);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.ramaksahang);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, RamakSahang.class);
@@ -134,8 +137,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi14);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.ularlidi);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, UlarLidi.class);
@@ -143,8 +146,8 @@ public class ragam extends AppCompatActivity {
             }
         });
 
-        button = (Button)findViewById(R.id.sasi15);
-        button.setOnClickListener(new View.OnClickListener() {
+        cv = (CardView)findViewById(R.id.turundayang);
+        cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ragam.this, TurunDayang.class);

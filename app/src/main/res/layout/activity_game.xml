@@ -16,17 +16,20 @@
         android:layout_margin="10dp">
 
         <TextView
+            android:id="@+id/txtskor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SKOR : "
-            android:textSize="22sp"/>
+            android:textSize="22sp"
+            android:textColor="@color/primaryTextColor"/>
 
         <TextView
             android:id="@+id/tvSkor"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="22sp"/>
+            android:textSize="22sp"
+            android:textColor="@color/primaryTextColor"/>
     </LinearLayout>
 
     <RelativeLayout
@@ -41,7 +44,7 @@
         <ImageView
             android:id="@+id/ivGambar"
             android:layout_width="match_parent"
-            android:layout_height="230dp"/>
+            android:layout_height="200dp"/>
 
         <TextView
             android:id="@+id/tvSoal"
@@ -52,6 +55,7 @@
             android:gravity="center"
             android:padding="15dp"
             android:textSize="20sp"
+            android:textColor="@color/primaryTextColor"
             android:layout_below="@+id/ivGambar"/>
 
     </RelativeLayout>
@@ -66,7 +70,8 @@
         <RadioGroup
             android:id="@+id/rgPilihanJawaban"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor">
 
             <RadioButton
                 android:id="@+id/rbPilihanJawaban1"
